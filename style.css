@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center the form container with proper flex alignment */
+#speedFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Heading Section Styling */
+#headingSection h2 {
+    color: #2b2d42;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* URL Input Section */
+#urlInputSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px; /* Adjust padding to create more space inside the form */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#urlInputSection label {
+    color: #2b2d42;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left; /* Align label to the left for better readability */
+}
+
+#urlInputSection input[type="text"] {
+    width: 100%; /* Full width input field */
+    padding: 12px; /* Add padding inside the input for consistent spacing */
+    border: 2px solid #8d99ae;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    margin-bottom: 20px; /* Consistent margin at the bottom */
+}
+
+#urlInputSection input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #ef233c;
+}
+
+#urlInputSection input[type="submit"] {
+    background-color: #ef233c;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#urlInputSection input[type="submit"]:hover {
+    background-color: #d90429;
+    transform: translateY(-2px);
+}
+
+#urlInputSection input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Alert Styling */
+.alert {
+    background-color: #2b2d42;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
